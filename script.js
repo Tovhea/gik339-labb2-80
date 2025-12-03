@@ -8,8 +8,15 @@ const divElement = document.querySelector("#div");
 
 
 
-/*textfieldElement.onclick = handleClick;
-textfieldElement.oninput = function() {console.log('Något skrivdes!');};
+function handleWorth (e){
+console.log(e.target)
+if (e.target.name === 'content' )
+    console.log(e.target);
+    divElement.innerHTML = e.target.value
+}
+
+textfieldElement[0].onclick = handleWorth; /* ÄNDRA, ÄR INTE LÖST BRA*/
+/*textfieldElement.oninput = function() {console.log('Något skrivdes!');};
 textfieldElement.addEventListener()
 
 function handleWorth (e){
@@ -28,10 +35,10 @@ let divAttribute = document.querySelector('#div');
 
 let button = document.querySelector(".button");
 button.onclick = function() {console.log('Knappen klickades!');};
-button.addEventListener("click", () => {console.log('Knappen klickades igen');});*/
+button.addEventListener("click", () => {console.log('Tack för att du klickade knappen');});
 
 
  checkboxElement.addEventListener() => {
 if checkboxElement = checked 
 
-}
+}*/
